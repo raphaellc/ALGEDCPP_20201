@@ -138,6 +138,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Coordenada.cpp" />
+    <ClCompile Include="Origem.cpp" />
+    <ClCompile Include="Retangulo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Coordenada.h" />
+    <ClInclude Include="Retangulo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
