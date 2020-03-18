@@ -4,10 +4,29 @@ Retangulo::Retangulo()
 {
 	comprimento = 1.0f;
 	largura = 1.0f;
-	setCoordenadas();
+	defineCoordenadas();
 }
 
-void Retangulo::setCoordenadas()
+Retangulo::~Retangulo()
+{
+}
+
+float Retangulo::calculaArea()
+{
+	return 0.0f;
+}
+
+float Retangulo::calculaPerimetro()
+{
+	return 0.0f;
+}
+
+bool Retangulo::ehQuadrado()
+{
+	return false;
+}
+
+void Retangulo::defineCoordenadas()
 {
 	int i = 0;
 	float x, y;
@@ -45,4 +64,18 @@ void Retangulo::setComprimento()
 		comprimento = comp2;
 		largura = comp1;
 	}
+}
+
+float Retangulo::getComprimento()
+{
+	return 0.0f;
+}
+
+void Retangulo::setLargura()
+{
+}
+
+float Retangulo::getLargura()
+{
+	return 0.0f;
 }

@@ -19,7 +19,7 @@ private:
 		float comprimento;
 		float largura;
 		Coordenada * coordenadas[4];
-		void setCoordenadas();
+		void defineCoordenadas();
 
 
 };
