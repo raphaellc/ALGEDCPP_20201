@@ -27,6 +27,26 @@ void Retangulo::setCoordenadas()
 		}
 }
 
+float Retangulo::calculaPerimetro()
+{
+	return (2*comprimento + 2*largura);
+}
+
+bool Retangulo::ehQuadrado()
+{
+	if (largura != 0 && comprimento != 0) {
+		if (largura == comprimento) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	else {
+		return false;
+	}
+}
+
 void Retangulo::setComprimento()
 {
 	float comp1, comp2;
@@ -45,4 +65,14 @@ void Retangulo::setComprimento()
 		comprimento = comp2;
 		largura = comp1;
 	}
+}
+
+float Retangulo::getComprimento()
+{
+	return comprimento;
+}
+
+float Retangulo::getLargura()
+{
+	return largura;
 }

@@ -12,7 +12,7 @@ public:
 		bool ehQuadrado();
 		void setComprimento();
 		float getComprimento();
-		void setLargura();
+//		void setLargura();
 		float getLargura();
 		
 private:
