@@ -12,6 +12,8 @@ protected:
 	float comprimento, largura;
 	int controle_coord;
 	Coordenada * coordenadas;
+	Coordenada * coordenadasEstatica[4];
+	
 	void setCoordenadas(Coordenada * coord);
 };
 

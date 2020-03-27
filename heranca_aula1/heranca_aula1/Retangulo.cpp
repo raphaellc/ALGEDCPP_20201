@@ -7,9 +7,12 @@ Retangulo::Retangulo()
 	this->controle_coord = 0;
 	this->qtd_coordenadas = 4;
 	this->coordenadas = new Coordenada[qtd_coordenadas];
-	
+	delete[] coordenadas;
+
 	for(;controle_coord < qtd_coordenadas; controle_coord++)
 		setCoordenadas(new Coordenada());
+	
+	
 	
 	
 }
