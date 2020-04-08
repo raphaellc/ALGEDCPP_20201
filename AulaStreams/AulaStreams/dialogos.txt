@@ -1,1 +1,1 @@
-1 fala1 fala12 fala13
+1 fala1;fala12;fala13
