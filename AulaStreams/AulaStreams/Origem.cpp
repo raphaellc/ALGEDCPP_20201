@@ -67,7 +67,6 @@ int main()
 	system("pause");
 	
 	int inData;
-	
 	std::ifstream inFBin("dialogBin.dat", std::ios::binary | std::ios::in);
 	Fala falaP1in;
 	int indice = 0;
@@ -75,6 +74,7 @@ int main()
 
 		inFBin.read(reinterpret_cast<char*>(&vetorFalas[indice]), sizeof(Fala));
 		indice++;
+		std::cout << inFBin.tellg() << std::endl;
 	}
 	for (int i = 0; i < 3; i++) {
 		std::cout << "P" << i <<" Fala: " << vetorFalas[i].obtemFala() << std::endl;
