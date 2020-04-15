@@ -67,19 +67,33 @@ int main()
 	system("pause");
 	
 	int inData;
-	std::ifstream inFBin("dialogBin.dat", std::ios::binary | std::ios::in);
+	std::ifstream inFBin;
+	inFBin.open("dialogBin.dat", std::ios::binary | std::ios::in);
 	Fala falaP1in;
 	int indice = 0;
+	
 	while (inFBin.is_open() && !inFBin.eof()) {
-
+		std::cout << inFBin.tellg() << std::endl;
 		inFBin.read(reinterpret_cast<char*>(&vetorFalas[indice]), sizeof(Fala));
 		indice++;
-		std::cout << inFBin.tellg() << std::endl;
 	}
 	for (int i = 0; i < 3; i++) {
 		std::cout << "P" << i <<" Fala: " << vetorFalas[i].obtemFala() << std::endl;
 	}
+	/*vetorFalas[1].defineFala("NovaFala");
+
 	inFBin.close();
+	farq_bin.open("dialogBin.dat", std::ios::out | std::ios::binary);
+	farq_bin.seekp(1 * sizeof(Fala));
+	farq_bin.write(reinterpret_cast<const char*>(&vetorFalas[1]), sizeof(Fala));
+	farq_bin.close();
+
+	Fala novaFala;
+	inFBin.open("dialogBin.dat", std::ios::binary | std::ios::in);
+	inFBin.seekg(1 * sizeof(Fala));
+	inFBin.read(reinterpret_cast<char*>(&novaFala), sizeof(Fala));
+	inFBin.close();
+	std::cout << " Fala: " << novaFala.obtemFala() << std::endl;*/
 	system("pause");
 	return 0;
 }
