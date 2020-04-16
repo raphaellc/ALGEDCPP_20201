@@ -7,9 +7,9 @@ public:
 	~Fala();
 	int idPersonagem;
 	int idInteracao;
-	std::string obtemFala();
+	char * obtemFala();
 	void defineFala(std::string fl);
 private:
-	std::string fala;
+	char fala[100];
 };
 
