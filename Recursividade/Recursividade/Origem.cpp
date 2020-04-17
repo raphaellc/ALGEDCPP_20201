@@ -3,14 +3,13 @@ using namespace std;
 
 int Potencia(int x, int y)
 {
-	
+	cout << "Potencia(" << x << "," << y << ")" << endl;
 	int result;
 	if (y == 0) {
 		return 1;
 	}
 	cout << x << "*";
 	result = Potencia(x, y - 1);
-	cout << "Potencia(" << x << "," << y << ")" << endl;
 	cout << x << "*" << result << endl;
 	return x * result;
 }
