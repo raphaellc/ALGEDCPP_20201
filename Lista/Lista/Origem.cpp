@@ -9,7 +9,7 @@ int main()
 		vetor[i] =  i/2 ;
 	}*/
 
-	Lista * lista = new Lista();
+	Lista<int> * lista = new Lista<int>();
 
 	//Adicionando números
 	lista->inserir(0);

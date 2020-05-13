@@ -1,17 +1,18 @@
 #pragma once
 #include "Nodo.h"
 #include <iostream>
+template<class T>
 class Lista
 {
 public:
 	Lista();
 	~Lista();
 	void listarTodos();
-	int buscarPosicao(int pos);
-	void inserir(int n);
-	void deletar(int n);
-	void inserirRecursivo(int n);
+	T buscarPosicao(int pos);
+	void inserir(T n);
+	void deletar(T n);
+	void inserirRecursivo(T n);
 private:
-	Nodo *nodoInicial;
+	Nodo<T> *nodoInicial;
 	//1 - Nodo *aux = nodoInicial;
 };
