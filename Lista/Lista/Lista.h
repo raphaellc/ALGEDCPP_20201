@@ -9,6 +9,7 @@ public:
 	~Lista();
 	void listarTodos();
 	T buscarPosicao(int pos);
+	bool buscarValor(T _valorABuscar);
 	void inserir(T n);
 	void deletar(T n);
 	void inserirRecursivo(T n);

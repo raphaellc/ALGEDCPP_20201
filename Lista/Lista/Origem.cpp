@@ -1,8 +1,16 @@
 #include <iostream>
 #include "Lista.h"
+#include "Gameobject.h"
 
 int main()
 {	
+	Gameobject * go1 = new Gameobject();
+	Gameobject * go2 = new Gameobject();
+	std::cout << go1 << std::endl;
+	go1->getId() == go2->getId();
+
+	Lista<Gameobject *> * lst = new Lista<Gameobject*>
+		
 	/*int vetor[100];
 	for (int i = 0 ; i<100 ; i++)
 	{
@@ -10,7 +18,7 @@ int main()
 	}*/
 
 	Lista<int> * lista = new Lista<int>();
-
+	Lista<Gameobject> * game_objects = new Lista<Gameobject>();
 	//Adicionando números
 	lista->inserir(0);
 	lista->inserir(2);

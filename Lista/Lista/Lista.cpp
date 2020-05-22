@@ -33,6 +33,16 @@ void Lista::listarTodos()
 	*/
 }
 
+template<class T>
+bool Lista<T>::buscarValor(T _valorABuscar)
+{
+	//percorer a lista
+	//Pra cada nó
+	//no->dado == valorABuscar
+
+	return false;
+}
+
 void Lista::inserir(int n)
 {
 	if(nodoInicial == nullptr){

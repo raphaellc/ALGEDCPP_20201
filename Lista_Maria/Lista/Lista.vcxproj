@@ -116,8 +116,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Gameobject.cpp" />
-    <ClCompile Include="Lista.cpp" />
-    <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="Origem.cpp" />
   </ItemGroup>
   <ItemGroup>
