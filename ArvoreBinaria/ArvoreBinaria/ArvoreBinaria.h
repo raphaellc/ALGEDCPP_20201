@@ -88,6 +88,7 @@ inline void ArvoreBinaria<T>::inserirElemento(T _e, Nodo<T>* _r)
 			{
 				Nodo<T> * aux = new Nodo<T>();
 				aux->defineDado(_e);
+				aux->definePai(_r);
 				_r->defineFilhoDir(aux);
 			}
 
@@ -100,6 +101,7 @@ inline void ArvoreBinaria<T>::inserirElemento(T _e, Nodo<T>* _r)
 			{
 				Nodo<T> * aux = new Nodo<T>();
 				aux->defineDado(_e);
+				aux->definePai(_r);
 				_r->defineFilhoEsq(aux);
 			}
 		}
