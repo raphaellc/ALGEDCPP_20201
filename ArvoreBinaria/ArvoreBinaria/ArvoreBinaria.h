@@ -60,6 +60,14 @@ inline void ArvoreBinaria<T>::inserirElemento(T _e)
 }
 
 template<class T>
+inline int ArvoreBinaria<T>::altura()
+{
+	if(raiz != nullptr)
+		return altura(raiz);
+	return 0;
+}
+
+template<class T>
 inline void ArvoreBinaria<T>::caminharEmOrdem(Nodo<T>* _r)
 {
 	if(_r->obterFilhoEsq() != nullptr)
@@ -106,4 +114,18 @@ inline void ArvoreBinaria<T>::inserirElemento(T _e, Nodo<T>* _r)
 			}
 		}
 	}
+}
+
+template<class T>
+inline int ArvoreBinaria<T>::altura(Nodo<T>* _r)
+{
+	if (_r == nullptr) return -1;
+	int alturaE, alturaD;
+	alturaE = altura(_r->obterFilhoEsq());
+	alturaD = altura(_r->obterFilhoDir());
+	if (alturaE > alturaD)
+		{return 1 + alturaE;}
+	else
+		{ return 1 + alturaD; }
+	
 }
